@@ -1,6 +1,7 @@
 name: deep-research
 channels:
   - defaults
+  - pytorch
 dependencies:
   - python=3.11
   - pip:
@@ -13,3 +14,4 @@ dependencies:
       - langchain==0.3.26
       - jupyter==1.1.1
       - ipykernel==6.29.5
+      - numpy<2
