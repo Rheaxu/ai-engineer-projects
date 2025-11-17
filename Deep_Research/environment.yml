@@ -1,11 +1,15 @@
 name: deep-research
 channels:
-  - defaults
+  - conda-forge
   - pytorch
+  - defaults
 dependencies:
   - python=3.11
+  - numpy<2
+  - pip
   - pip:
       - transformers==4.57.1
+      - accelerate>=0.30
       - ollama-python==0.1.2
       - ddgs==9.4.0
       - langchain-openai==0.3.27
@@ -14,4 +18,3 @@ dependencies:
       - langchain==0.3.26
       - jupyter==1.1.1
       - ipykernel==6.29.5
-      - numpy<2
